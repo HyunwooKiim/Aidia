@@ -1,7 +1,7 @@
 /*클래스 선언은 파스칼 케이스로*/
 /*기본 테그 영역*/
 body {
-    background: var(--darkSky, linear-gradient(180deg, hsl(216, 28%, 7%) 0%, #1D0C4E 100%));
+    background-image: url(./images/IndexBackground.svg);
     background-repeat: no-repeat; /* 배경 이미지 반복을 막습니다 */
     background-size: cover; /* 배경 이미지를 화면 전체에 맞게 확장합니다 */
     background-attachment: fixed; /* 배경이 스크롤 시에도 고정되도록 설정합니다 */
@@ -30,6 +30,22 @@ body {
   font-style: normal;
 }
 */
+.NotoSansKrBlack, .NotoSansKrBold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-family: "Noto Sans KR";
+}
+
+.NotoSansKrBlack {
+    font-weight: 900;
+}
+
+.NotoSansKrBold {
+    font-weight: 700;
+}
+
 .InterBold, .InterReguler, .InterMedium {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -127,5 +143,40 @@ body {
 
 .LiMargin {
     margin-top: 0;
+}
+
+.IndexCenterContainer, .CenterButton > button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.IndexCenterContainer {
+    align-items: center;
+}
+
+.CenterText {
+    margin-top: 248px;
+}
+
+.CenterButton {
+    margin-top: 70px;
+}
+
+.CenterButton > button {
+    padding: 28px 71px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #722FFF;
+}
+
+.CenterText > h1 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.CenterButton > button {
+    color: #fff;
+    font-size: 24px;
 }
 /**/
