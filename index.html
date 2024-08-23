@@ -5,21 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aidia</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>123</h1>
         <header>
             <div class="HeaderContainer">
-                <div>
+                <div class="HeaderLogo">
                     <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
                 </div>
-                <div>
-                    
-                </div>
-                <div>
-
+                <nav>
+                    <ul class="LiFont InterBold HeaderNavFont HeaderNav">
+                        <li class="HeaderHome"><a>Home</a></li>
+                        <li class="HeaderAbout"><a>About</a></li>
+                        <li class="HeaderUpload"><a>Upload</a></li>
+                        <li class="HeaderSearch"><a>Search</a></li>
+                    </ul>
+                </nav>
+                <!--a 태그의 경로는 페이지를 만들게 되면 적을 예정-->
+                <div class="HeaderLoginSignup">
+                    <ul class="LiFont LiMargin">
+                        <li class="HeaderLogin"><a>Log in</a></li>
+                        <li class="HeaderSignup"><a>Sign up</a></li>
+                    </ul>
                 </div>
             </div>
         </header>
+        <main>
+            <div class="IndexCenterContainer">
+                <div class="CenterText">
+                    <h1 class="NotoSansKrBlack">세상을 바꾸는 작은 아이디어 시작하기</h1>
+                </div>
+                <div class="CenterButton">
+                    <button type="button" class="NotoSansKrBold">버튼을 눌러 시작하기</button>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

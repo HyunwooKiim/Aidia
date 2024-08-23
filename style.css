@@ -1,8 +1,182 @@
 /*클래스 선언은 파스칼 케이스로*/
+/*기본 테그 영역*/
 body {
-    background: var(--darkSky, linear-gradient(180deg, hsl(216, 28%, 7%) 0%, #1D0C4E 100%));
+    background-image: url(./images/IndexBackground.svg);
     background-repeat: no-repeat; /* 배경 이미지 반복을 막습니다 */
     background-size: cover; /* 배경 이미지를 화면 전체에 맞게 확장합니다 */
     background-attachment: fixed; /* 배경이 스크롤 시에도 고정되도록 설정합니다 */
+    width: 100%;
+}
+/**/
+/*폰트 영역*/
+/*
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+/*
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900
+
+.noto-sans-kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+.NotoSansKrBlack, .NotoSansKrBold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-family: "Noto Sans KR";
 }
 
+.NotoSansKrBlack {
+    font-weight: 900;
+}
+
+.NotoSansKrBold {
+    font-weight: 700;
+}
+
+.InterBold, .InterReguler, .InterMedium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;   
+}
+
+.InterBold {
+    font-weight: 700;
+}
+
+.InterReguler {
+    font-weight: 400;
+}
+
+.InterMedium {
+    font-weight: 500;
+}
+/**/
+/*헤더 영역*/
+.HeaderContainer {
+    height: 86px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 요소들을 수평으로 중앙에 배치 */
+    align-items: center; /* 요소들을 수직으로 중앙에 배치 */
+}
+
+.HeaderLogo {
+    margin-top: 26px; 
+    margin-right: 304px;
+}
+
+.LiFont {
+    color: aliceblue;
+    list-style-type: none;
+    padding-left: 0; /* 왼쪽 패딩 제거 */
+}
+
+.HeaderNavFont {
+    font-size: 24px;
+}
+
+.HeaderNav {
+    display: flex;
+    margin-top: 0;
+}
+/*
+.LiFont > li > a {
+    
+}
+*/
+.HeaderHome, .HeaderUpload, .HeaderSearch, .HeaderAbout {
+    margin-top: 39px;
+}
+
+.HeaderHome {
+    margin-right: 72px;
+}
+
+.HeaderAbout {
+    margin-right: 70px;
+}
+
+.HeaderUpload {
+    margin-right: 57px;
+}
+
+.HeaderSearch {
+    margin-right: 278px;
+}
+
+.HeaderLogin, .HeaderSignup {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeaderLogin {
+    font-size: 15px;
+    margin-top: 42px;
+    margin-right: 20px;
+}
+
+.HeaderSignup {
+    padding: 9px 33px;
+    background: #18083A;
+    margin-top: 32px;
+}
+
+.HeaderSignup > a {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+}
+
+.LiMargin {
+    margin-top: 0;
+}
+
+.IndexCenterContainer, .CenterButton > button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.IndexCenterContainer {
+    align-items: center;
+}
+
+.CenterText {
+    margin-top: 248px;
+}
+
+.CenterButton {
+    margin-top: 70px;
+}
+
+.CenterButton > button {
+    padding: 28px 71px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #722FFF;
+}
+
+.CenterText > h1 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.CenterButton > button {
+    color: #fff;
+    font-size: 24px;
+}
+/**/
