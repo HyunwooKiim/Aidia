@@ -1,7 +1,6 @@
 /*클래스 선언은 파스칼 케이스로*/
 /*기본 테그 영역*/
 body {
-    background-image: url(./images/IndexBackground.svg);
     background-repeat: no-repeat; /* 배경 이미지 반복을 막습니다 */
     background-size: cover; /* 배경 이미지를 화면 전체에 맞게 확장합니다 */
     background-attachment: fixed; /* 배경이 스크롤 시에도 고정되도록 설정합니다 */
@@ -178,5 +177,11 @@ body {
 .CenterButton > button {
     color: #fff;
     font-size: 24px;
+    border: none;
+}
+
+.CenterButton > button:hover {
+    padding: 28px 60px;
+    background: #8348FF;
 }
 /**/
