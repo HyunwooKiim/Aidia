@@ -41,9 +41,25 @@
                     <h1 class="NotoSansKrBlack">세상을 바꾸는 작은 아이디어 시작하기</h1>
                 </div>
                 <div class="CenterButton">
-                    <button type="button" class="NotoSansKrBold">버튼을 눌러 시작하기</button>
+                    <button type="button" class="NotoSansKrBold" id="CenterButtonText">버튼을 눌러 시작하기</button>
                 </div>
             </div>
         </main>
+        <script>
+            // JavaScript가 HTML이 모두 로드된 후 실행되도록 window.onload 사용
+            window.onload = function() {
+                const CenterButtonHover = document.getElementById('CenterButtonText');
+
+                // 마우스가 버튼 위에 올라갔을 때 텍스트를 변경
+                CenterButtonHover.addEventListener('mouseover', function() {
+                    CenterButtonHover.textContent = '아이디어 공유하러 가기';
+                });
+
+                // 마우스가 버튼에서 벗어났을 때 텍스트를 원래대로 복원
+                CenterButtonHover.addEventListener('mouseleave', function() {
+                    CenterButtonHover.textContent = '버튼을 눌러 시작하기';
+                });
+            };
+        </script>
     </body>
 </html>

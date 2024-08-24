@@ -178,5 +178,11 @@ body {
 .CenterButton > button {
     color: #fff;
     font-size: 24px;
+    border: none;
+}
+
+.CenterButton > button:hover {
+    padding: 28px 60px;
+    background: #8348FF;
 }
 /**/
