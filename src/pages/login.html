@@ -12,10 +12,47 @@
     <style>
         body {
             background-image: url(../assets/images/LoginSignupBackground.svg);
+            display: flex;
+        }
+
+        .HeaderSearch {
+            margin-right: 105px;
+        }
+
+        .HeaderHome {
+            margin-left: 161px;
+            margin-right: 66px;
+        }
+
+        .HeaderUpload {
+            margin-left: 66px;
+            margin-right: 66px;
+        }
+
+        .HeaderAbout {
+            margin-right: 0;
         }
     </style>
 </head>
 <body>
-    
+    <section class="LoginSection">
+        <div class="LoginSignupLogo"><a href="./index.html"><img src="../assets/images/logo.svg" alt="logo"></a></div>
+    </section>
+    <header class="HeaderContainer">
+        <nav>
+            <ul class="LiFont InterBold HeaderNavFont HeaderNav">
+                <li class="HeaderHome"><a>Home</a></li>
+                <li class="HeaderAbout"><a>About</a></li>
+                <li class="HeaderUpload"><a>Upload</a></li>
+                <li class="HeaderSearch"><a>Search</a></li>
+            </ul>
+        </nav>
+        <div class="HeaderLoginSignup">
+            <ul class="LiFont LiMargin LoginHeaderGab">
+                <li class="HeaderLogin"><a href="login.html">Log in</a></li>
+                <li class="HeaderSignup SignupMargin"><a>Sign up</a></li>
+            </ul>
+        </div>
+    </header>
 </body>
 </html>

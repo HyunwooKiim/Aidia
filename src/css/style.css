@@ -129,6 +129,11 @@ body {
     margin-right: 20px;
 }
 
+.HeaderLogin > a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .HeaderSignup {
     padding: 9px 33px;
     background: #18083A;
@@ -142,6 +147,10 @@ body {
 
 .LiMargin {
     margin-top: 0;
+}
+
+.SignupMargin {
+    margin-right: 152px;
 }
 
 .IndexCenterContainer, .CenterButton > button {
@@ -185,3 +194,15 @@ body {
     background: #8348FF;
 }
 /**/
+/*로그인 페이지 전용*/
+.LoginSignupLogo {
+    margin-top: 26px; 
+    margin-left: 120px;
+}
+
+.LoginSection {
+    background: rgba(0, 0, 0, 0.30);
+    height: 100vh;
+    width: 808px;  
+    display: flex;  
+}
